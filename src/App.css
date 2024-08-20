@@ -1,0 +1,43 @@
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  height: 100px;
+}
+
+header img {
+  width: 150px;
+}
+
+.carroussel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 40px;
+}
+
+.carroussel div {
+  flex-shrink: 0;
+  height: 124px;
+  /* aspect-ratio: calc(220 / 124); */
+  width: 220px;
+}
+
+.carroussel div > img {
+  width: 100%;
+  object-fit: fill;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 25px;
+}
